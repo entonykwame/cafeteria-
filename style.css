@@ -1,96 +1,156 @@
 @charset "utf-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-font-data{
-    src: url();
-    font-family: font2;
+@font-face{
+    src: url(Fontes/Misologist.otf);
+    font-family: font1;
+
+    
+
     
 }
 
-body{
+@font-face{
+    src: url(Fontes/MilestoneFreeVersion-Script.otf);
+    font-family: font2;
+}
+
+@font-face{
+
+    src: url(Fontes/Magic\ Retro.ttf); font-family: font3;
+
+}
+
+body {
     font-size: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
     background: url(https://cdn.pixabay.com/photo/2014/08/26/13/53/cafe-427981_1280.jpg);
-   background-repeat: no-repeat;   
-   background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+
+header{
+    background-color: black;
+    
+}
+
+h1 span {
+    color: rgb(158, 0, 158);
+
+}
+
+header h1{
+    margin-left: 39%;
+    color: darkgoldenrod;
+    font-size: 3em;
+    border-radius: 30px;
+    font-family:font2;
+}
+
+header h2{
+    color: darkgoldenrod;
+    margin-left: 18%;
+    padding: 10px;
+    font-family: font1;
 }
 
 
 
-.main-header{
+
+.main-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 2em;
+    background-color: #534c4c;
+    opacity: 85%;
+    border-radius: 30px;
+
 }
 
-.main-header h1{
-    font-size: 5em;
+.main-header h3 {
+    font-size: 1.7em;
     line-height: 1.2em;
-    color: rgb(228, 131, 20);
-
-}
-
-.main-header h1 span{
-    color: rgb(100, 10, 100);
-}
-
-.container{
-    max-width: 1100px;
-    margin: auto;
-    overflow: auto;
-    padding: 0 2em;
-}
-
-.card{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 2em;
-    padding: 2em;
-    
-}
-
-img{
-    width: 100%;
-    border-radius: 50px;
-}
-
-
-
-
-.card:nth-child(even) img{
-    order: 2;
-}
-
-
-
-
-header h1{
-    font-family: 'Playfair Display', serif;
+    color: rgb(242, 206, 2);
+    opacity: 100%;
+    font-family: font1;
 }
 
 p{
-    font-size:x-large;
-    font-family: fantasy;
+    font-size: 1.5em;
+    font-family: font3;
 }
 
-h3{
-    font-weight: bolder;
-    font-style: inherit;
-    font-family: 'Tilt Neon', sans-serif;
-    color: #534c4c;
+table th{
+    color: goldenrod;
+    background-color: black;
+    align-items: center;
+    font-family: font1;
+    
+}
+   
+   table{
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    margin-left: 19%;
+    margin-right: 19%;
+   }
+
+   td{
+    color: goldenrod;
+    font-family: font2;
+   }
+
+img {
+    width: 77%;
+    height: 30%;
+    border-radius: 50px;
+    margin: 10%;
+    
 }
 
-footer{
-    font-size: 1.3em;
-font-family: 'Times New Roman', Times, serif;
-color: white;
+.comidas{
+    margin: 2.1em;
+    display: flex;
+    height: 13em;
+    gap: 0.7em;
+
+}
+
+.comidas div{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transition: all 0.7s cubic-bezier(0.28, 0.9, 0.100, 1) ;
+    border-radius: 10px;
+}
+
+.comidas div:hover {
+    flex: 4;   
+}
+
+.comidas:hover div:not(:hover){
+    filter: grayscale(90%)
+}
+
+ fieldset p{
+    color:white
+}
+
+footer p{
+    font-size: 1.7em;
+   font-family: font3;
+    color: white;
+}
+footer span{
+    color: palevioletred;
 }
